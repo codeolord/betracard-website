@@ -896,6 +896,12 @@ video {
 .h-48 {
   height: 12rem;
 }
+.h-14 {
+  height: 3.5rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -983,6 +989,12 @@ video {
 }
 .w-48 {
   width: 12rem;
+}
+.w-14 {
+  width: 3.5rem;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1323,6 +1335,10 @@ video {
 .bg-amber-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
