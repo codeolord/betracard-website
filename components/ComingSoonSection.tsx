@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Download, Star } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ComingSoonSection() {
   return (
@@ -33,11 +34,14 @@ export default function ComingSoonSection() {
             whileHover={{ scale: 1.05 }}
             className="bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20 cursor-pointer"
           >
-            <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-500 rounded-3xl">
-              <svg viewBox="0 0 24 24" fill="white" className="w-10 h-10">
-                {/* Apple Logo */}
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.3-3.14-2.53C4.25 17 2.94 12.46 4.7 9.12c.87-1.63 2.25-2.66 3.72-2.67 1.24-.02 2.42.76 3.18.76.74 0 2.38-1.01 4.04-.85 1.44.05 2.89.42 3.91 1.26-1.23.74-1.82 2.08-1.91 3.4-.04 1.42.84 2.96 2.05 3.91-.5.79-1.35 1.54-2.30 2.13z"/>
-              </svg>
+            <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <Image
+                src="/images/app-store-logo.png.png"
+                alt="Apple App Store"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
             </div>
             <h3 className="text-lg font-semibold mb-2">iOS App</h3>
             <p className="text-sm opacity-90 mb-4">Coming to App Store</p>
@@ -54,14 +58,14 @@ export default function ComingSoonSection() {
             whileHover={{ scale: 1.05 }}
             className="bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20 cursor-pointer"
           >
-            <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                {/* Google Play Store Logo */}
-                <path d="M3 13.5L12.46 3.04c.38-.38 1.01-.38 1.39 0L22.46 13.5c.78.78.78 2.05 0 2.83L13.85 22.96c-.38.38-1.01.38-1.39 0L3 13.5z" fill="#00BCD4"/>
-                <path d="M3 13.5L12.46 3.04c.38-.38 1.01-.38 1.39 0L13.85 4.92L3 13.5z" fill="#4CAF50"/>
-                <path d="M13.85 22.96c-.38.38-1.01.38-1.39 0l-9.46-9.46L13.85 4.92v18.04z" fill="#FFEB3B"/>
-                <path d="M13.85 4.92L22.46 13.5c.78.78.78 2.05 0 2.83l-8.61 5.21V4.92z" fill="#FF5252"/>
-              </svg>
+            <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <Image
+                src="/images/play-store-logo.png.png"
+                alt="Google Play Store"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
             </div>
             <h3 className="text-lg font-semibold mb-2">Android App</h3>
             <p className="text-sm opacity-90 mb-4">Coming to Play Store</p>
